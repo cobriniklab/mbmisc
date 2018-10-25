@@ -4,7 +4,7 @@
 \alias{font_col}
 \title{Color text in R Markdown}
 \usage{
-font_col(x, col)
+font_col(x, color)
 }
 \arguments{
 \item{x}{a string, the text to be colored}
