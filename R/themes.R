@@ -163,12 +163,12 @@ theme_alco <- function(font_size = 14, font_family = "", line_size = .5, color =
 #'
 #' @param x a string, the text to be colored
 #' @param col the color
-#'
+#' @export
 #' @return a character vector
 font_col <- function(x, col) {
   mkdwn_fmt <- knitr::opts_knit$get("rmarkdown.pandoc.to")
   if (mkdwn_fmt == "latex") {
-    paste("\\textcolor{", color, "}{", x, "}", sep = "")
+    paste("\\textcolor{", col, "}{", x, "}", sep = "")
     glue::glue("\\textcolor{<<color>>}{<<x>>}",
                .open = "<<",
                .close = ">>")

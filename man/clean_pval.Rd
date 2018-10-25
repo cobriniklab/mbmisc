@@ -5,8 +5,8 @@
 \title{Clean p-value}
 \usage{
 clean_pval(x, less_than = 0.001, digits = 3, add_stars = FALSE,
-  stars = list(pval = c(0.1, 0.05, 0.01, 0.001), symbol = c(".", "*", "**",
-  "***")))
+  stars = list(pval = c(0.1, 0.05, 0.01, 0.001), symbol = c(".", "*",
+  "**", "***")))
 }
 \arguments{
 \item{x}{a vector of p-values}
